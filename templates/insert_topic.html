@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>insert Topic</h1>
+        <form method="POST">
+        {% csrf_token %}
+            <label for="topic">Topic_name</label>
+            <input type="text" name="topic" id="topic">
+            <br>
+            <br>
+            <input type="submit" value="insert topic">
+
+        </form>
+    </center>
+</body>
+</html>

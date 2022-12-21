@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_webpages</h1>
+       <table border="3px">
+        <tr>
+            <th>topic_name</th>
+            <th>name</th>
+            <th>url</th>
+        </tr>
+        {% for i in webpages %}
+            <tr>
+                <td>{{i.topic_name}}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.url}}</td>
+                
+            </tr>
+        {% endfor %}
+
+
+       </table>
+    </center>
+    
+</body>
+</html>

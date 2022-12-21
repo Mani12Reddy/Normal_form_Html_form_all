@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <center>
+        <h1>AccessrRecords</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            <label for="na">Name</label>
+            <select name="na" id="na">
+                {% for na in webpages %}
+
+                    <option value="{{na}}">{{na.name}}</option>
+
+                {% endfor %}
+            </select><br><br>
+            
+            <label for="dt">Date</label>
+            <input type="date" name="dt" id="dt">
+            <br><br>
+            <input type="submit" value="access">
+        
+        </form>
+
+    </center>
+
+    
+</body>
+</html>

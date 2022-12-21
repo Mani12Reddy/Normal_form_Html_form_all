@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>select_topic</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <label for="topic">Topic_names</label>
+            <select name="topic" id="topic">
+
+                {% for t in topics %}
+                    <option value="{{t}}">{{t.topics}}</option>
+                {% endfor %}
+            </select><br><br>
+            <input type="submit" value="topic_submit">
+        </form>
+    </center>
+    
+</body>
+</html>
